@@ -13,7 +13,7 @@ const server = http.Server(app);
 const paymentRoute = require('./routes/paymentRoute');
 
 // MongoDB connection URI from environment variables
-const mongoURI = process.env.MONGODB_URI || "mongodb+srv://technomithlesh123:9r9zqMGQKDf0v2UI@cluster0.iu6v6sb.mongodb.net/myDatabase?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
